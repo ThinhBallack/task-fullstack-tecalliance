@@ -1,5 +1,8 @@
 from ..parser import TorqueDocument
-from .base import BaseValidator, ValidationResult
+from .base import (
+    BaseValidator,
+    ValidationResult,
+)
 
 # ──────────────────────────────────────────────────────────────
 # Validator Registry
@@ -12,10 +15,17 @@ from .base import BaseValidator, ValidationResult
 # ──────────────────────────────────────────────────────────────
 
 from .missing_torque import MissingTorqueValidator
+from .negative_torque import NegativeTorqueValidator
+from .outrageous_torque import OutrageousTorqueValidator
+from .safety_note import SafetyNoteValidator
+from .overlapping_date import OverlappingDateValidator
 
 VALIDATORS: list[BaseValidator] = [
     MissingTorqueValidator(),
-    # TODO: Add your validators here
+    NegativeTorqueValidator(),
+    OutrageousTorqueValidator(),
+    OverlappingDateValidator(),
+    SafetyNoteValidator(),
 ]
 
 
