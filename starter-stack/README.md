@@ -11,11 +11,11 @@ Identified critical data quality issues and implemented the following validators
 [x] SafetyNoteValidator: Highlights critical safety instructions like "Left-hand threads" or "Anti-seize" (Severity: WARNING/INFO) - e.g., Code 10AZ, 130AZ.
 
 Task 3: UI Improvements
-[ ] Added severity coloring (Red for Error, Yellow for Warning, Blue for Info).
+[x] Added severity coloring (Red for Error, Yellow for Warning, Blue for Info).
 
-[ ] Added grouping by Address Code.
+[x] Added grouping by Address Code.
 
-[ ] Added filtering by Validation Severity.
+[x] Added filtering by Validation Severity.
 
 Task 4 & 5: Upload History & Export
 [ ] Implemented SQLite database to store past uploads and validation results.

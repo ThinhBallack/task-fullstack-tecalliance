@@ -11,7 +11,7 @@ class OverlappingDateValidator(BaseValidator):
 
     def validate(self, document: TorqueDocument) -> list[ValidationResult]:
         issues = []
-        # Gom nhóm các address theo mã code
+        # Group addresses by code.
         groups = defaultdict(list)
         for addr in document.addresses:
             groups[addr.code].append(addr)
@@ -20,14 +20,14 @@ class OverlappingDateValidator(BaseValidator):
             if len(addrs) < 2:
                 continue
             
-            # Sắp xếp các address theo ngày bắt đầu (StartDate định dạng YYYY-MM-DD có thể sort chuỗi)
+            # Sort the addresses by start date (StartDate format YYYY-MM-DD, can be sorted as a string).
             sorted_addrs = sorted(addrs, key=lambda a: a.start_date or "")
             
             for i in range(1, len(sorted_addrs)):
                 prev = sorted_addrs[i-1]
                 curr = sorted_addrs[i]
                 
-                # Nếu ngày bắt đầu của phần tử hiện tại <= ngày kết thúc của phần tử trước đó -> Xung đột
+                # If the start date of the current element is less than or equal to the end date of the previous element, a conflict will occur.
                 if prev.end_date and curr.start_date and curr.start_date <= prev.end_date:
                     issues.append(
                         ValidationResult(
