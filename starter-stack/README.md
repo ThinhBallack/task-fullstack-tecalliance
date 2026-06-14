@@ -22,7 +22,7 @@ Task 4 & 5: Upload History & Export
 
 [x] Added UI view to browse previous uploads.
 
-[ ] Added "Export to CSV" functionality.
+[x] Added "Export to CSV" functionality.
 
 Task 6: Architecture (Optional)
-[ ] Addressed AWS deployment strategy in ARCHITECTURE.md for large files and timeout handling.
+[x] Addressed AWS deployment strategy in ARCHITECTURE.md for large files and timeout handling.
