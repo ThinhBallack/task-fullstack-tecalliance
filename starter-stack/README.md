@@ -18,9 +18,9 @@ Task 3: UI Improvements
 [x] Added filtering by Validation Severity.
 
 Task 4 & 5: Upload History & Export
-[ ] Implemented SQLite database to store past uploads and validation results.
+[x] Implemented SQLite database to store past uploads and validation results.
 
-[ ] Added UI view to browse previous uploads.
+[x] Added UI view to browse previous uploads.
 
 [ ] Added "Export to CSV" functionality.
 

@@ -20,3 +20,13 @@ export interface UploadResponse {
   addresses: Address[];
   validations: Validation[];
 }
+
+export interface HistoryItem {
+  id: number;
+  filename: string;
+  upload_time: string;
+  document_date: string | null;
+  total_issues: number;
+  error_count: number;
+  warning_count: number;
+}
