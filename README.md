@@ -19,9 +19,9 @@ Identified critical data quality issues and implemented the following validators
 - [x] Added **"Export to CSV"** functionality.
 
 ## Task 6: Architecture (Optional)
-- [x] Addressed AWS deployment strategy in [`ARCHITECTURE.md`](starter-pack/ARCHITECTURE.md) for large files and timeout handling.
+- [x] Addressed AWS deployment strategy in [`ARCHITECTURE.md`](starter-stack/ARCHITECTURE.md) for large files and timeout handling.
 
 ---
 
 ### Result screenshot:
-![Result screenshot](starter-pack/Result-screenshot.png)
+![Result screenshot](starter-stack/Result-screenshot.png)
