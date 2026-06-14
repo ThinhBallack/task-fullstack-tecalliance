@@ -26,3 +26,6 @@ Task 4 & 5: Upload History & Export
 
 Task 6: Architecture (Optional)
 [x] Addressed AWS deployment strategy in ARCHITECTURE.md for large files and timeout handling.
+
+Result screenshot:
+![Result screenshot](Result-screenshot.png)
